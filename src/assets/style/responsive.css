@@ -640,6 +640,22 @@
 
 
       /* css code for footer component */
+      .footer {
+        width: 100vw;
+      }
+
+      .wrap-sosmed {
+        margin-left: 20px;
+      }
+
+      .menu-footer ul {
+        margin-left: -20px;
+      }
+
+      .menu-footer2 ul {
+        margin-left: -18.6px;
+      }
+
       .menu-footer {
         position: relative;
         width: 100vw;
@@ -658,6 +674,10 @@
 
       .menu-footer span {
         display: none;
+      }
+
+      .footer small {
+        margin-left: 24px;
       }
 
       .menu-footer2 ul li {
