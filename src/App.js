@@ -12,7 +12,7 @@ import Footer from './component/footer';
 
 export default function App() {
 
-  const [search, setSearch] = useState('football');
+  const [search, setSearch] = useState('mountain');
   const [news, setNews] = useState(['']);
 
   const apiKey = '25687773-88986de890621f4246729e578';
@@ -28,9 +28,9 @@ export default function App() {
   
   const setData = (e) => {
     e.preventDefault()
-    Axios.get(`${baseURL}?q=${search}&sortBy=popularity&apiKey=${apiKey}`)
+    Axios.get(`${baseURL}/?key=${apiKey}&q=${search}&image_type=photo&per_page=$20&safesearch=true`)
     .then(res => {
-      setNews(res.data.articles)
+      setNews(res.data.hits)
     })
   }
 
