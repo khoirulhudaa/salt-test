@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Content2({news}) {
   return (
-    <div className="app">
+    <>
     {/* Component2 contents */}
-      <section className="content2">
+      <section className="content2" id="people">
         <div className="content-left">
           <div className="title-content-left">
             <h2>People</h2>
@@ -100,6 +100,6 @@ export default function Content2({news}) {
         </div>
       </section>
       {/* End component2 contents */}
-    </div>
+    </>
   );
 }

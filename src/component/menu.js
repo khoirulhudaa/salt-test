@@ -8,9 +8,9 @@ export default function Menu() {
       {/* Component menu */}
       <section className="menu">
         <ul>
-          <li>Videos</li><span>/</span>
-          <li>People</li><span>/</span>
-          <li>Document</li><span>/</span>
+          <li><a href="#videos">Videos</a></li><span>/</span>
+          <li><a href="#people">People</a></li><span>/</span>
+          <li><a href="#documents">Document</a></li><span>/</span>
           <li>Events</li><span>/</span>
           <li>Components</li><span>/</span>
           <li>Favorites</li><span>/</span>
