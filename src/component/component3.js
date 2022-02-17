@@ -19,7 +19,7 @@ export default function Content2({news}) {
                   <div className="child-videos">
                   {
                     news.length && (
-                      <img src={news[7]?.urlToImage} alt="image" />
+                      <img src={news[7]?.largeImageURL} alt="image" />
                     )
                   }
                   </div>
@@ -29,7 +29,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[8]?.urlToImage} alt="image" />
+                      <img src={news[8]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -39,7 +39,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[9]?.urlToImage} alt="image" />
+                      <img src={news[9]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -54,7 +54,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[10]?.urlToImage} alt="image" />
+                      <img src={news[10]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -64,7 +64,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[11]?.urlToImage} alt="image" />
+                      <img src={news[11]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />

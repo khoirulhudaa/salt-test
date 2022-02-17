@@ -19,7 +19,7 @@ export default function Content1({news}) {
                   <div className="child-videos">
                   {
                     news.length && (
-                      <img src={news[0]?.urlToImage} alt="image" />
+                      <img src={news[0]?.largeImageURL} alt="image" />
                     )
                   }
                   </div>
@@ -29,7 +29,7 @@ export default function Content1({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[1]?.urlToImage} alt="image" />
+                      <img src={news[1]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -39,7 +39,7 @@ export default function Content1({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[2]?.urlToImage} alt="image" />
+                      <img src={news[2]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -54,7 +54,7 @@ export default function Content1({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[3]?.urlToImage} alt="image" />
+                      <img src={news[3]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -64,7 +64,7 @@ export default function Content1({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[4]?.urlToImage} alt="image" />
+                      <img src={news[4]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -90,17 +90,17 @@ export default function Content1({news}) {
                   return (
                     <div className="child-list" key={index}>
                       <div className="child-list-image">
-                          <img src={data.urlToImage} alt="image" />
+                          <img src={data.largeImageURL} alt="image" />
                       </div>
                       <div className="child-list-deskipsi">
                           <div className="deskripsi-top">
-                            <h3>Adm stainlor</h3> <small>Commented</small>
+                            <h3>{data.user}</h3> <small>{data.type}</small>
                           </div>
                           <div className="deskripsi-bottom">
                             <p>I will used videos. thanks for all</p>
                           </div>
                           <div className="time">
-                            <FontAwesomeIcon className="comment-icon" icon={faComment} /> <h4>2 seconds ago</h4>
+                            <FontAwesomeIcon className="comment-icon" icon={faComment} /> <h4>{data.comments} comments</h4>
                           </div>
                       </div>
                   </div>

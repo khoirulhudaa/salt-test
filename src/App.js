@@ -15,15 +15,16 @@ export default function App() {
   const [search, setSearch] = useState('football');
   const [news, setNews] = useState(['']);
 
-  const baseURL = 'https://newsapi.org/v2/everything';
-  const apiKey = '7960922a77804ea58345312af185bf0f';
+  const apiKey = '25687773-88986de890621f4246729e578';
+  const baseURL = 'https://pixabay.com/api';
 
   useEffect(() => {
-    Axios.get(`${baseURL}?q=${search}&sortBy=popularity&apiKey=${apiKey}`)
+    Axios.get(`${baseURL}/?key=${apiKey}&q=${search}&image_type=photo&per_page=$20&safesearch=true`)
     .then(res => {
-      setNews(res.data.articles)
+      setNews(res.data.hits)
+      console.log(res.data)
     })
-  }, [news])
+  }, [])
   
   const setData = (e) => {
     e.preventDefault()
@@ -33,10 +34,14 @@ export default function App() {
     })
   }
 
+  const ok = () => {
+    console.log(news)
+  }
+
   return (
     <div className="app">
       {/* Component navbar */}
-      <Navbar setData={setData}/>
+      <Navbar setData={setData} ok={ok} setSearch={setSearch} search={search} />
       {/* End component navbar */}
 
       {/* Component menu */}

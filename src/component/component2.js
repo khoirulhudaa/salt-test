@@ -19,7 +19,7 @@ export default function Content2({news}) {
                   <div className="child-videos">
                   {
                     news.length && (
-                      <img src={news[5]?.urlToImage} alt="image" />
+                      <img src={news[5]?.largeImageURL} alt="image" />
                     )
                   }
                   </div>
@@ -29,7 +29,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[6]?.urlToImage} alt="image" />
+                      <img src={news[6]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -39,7 +39,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[7]?.urlToImage} alt="image" />
+                      <img src={news[7]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -54,7 +54,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[8]?.urlToImage} alt="image" />
+                      <img src={news[8]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -64,7 +64,7 @@ export default function Content2({news}) {
                 <div className="child-videos">
                 {
                     news.length ? (
-                      <img src={news[9]?.urlToImage} alt="image" />
+                      <img src={news[9]?.largeImageURL} alt="image" />
                     ) : (
                       // DUmmy Image
                       <img src={dummy} alt="image" />
@@ -89,8 +89,8 @@ export default function Content2({news}) {
                 if(index > 5 && index < 16) {
                   return (
                     <div className="child-list" key={index}>
-                      <img src={data.urlToImage} alt={data.title} />
-                      <small>{data.author}</small>
+                      <img src={data.largeImageURL} alt={data.title} />
+                      <small>{data.tags}</small>
                   </div>
                   )
                 }
