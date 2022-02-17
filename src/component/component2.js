@@ -67,7 +67,7 @@ export default function Content2({news}) {
           </div>
         </div>
         <div className="content-right" id='channels'>
-          <div className="title-content-right">
+          <div className="title-content-right ff">
             <h2>Channels</h2>
             <small>Browse all channels</small>
           </div>
