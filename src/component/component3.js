@@ -28,21 +28,15 @@ export default function Content2({news}) {
               <div className="videos-top-right">
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[8]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
                     )
                 }
                 </div>
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[9]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
                     )
                 }
                 </div>
@@ -53,21 +47,15 @@ export default function Content2({news}) {
             <div className="videos-bottom">
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[10]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
                     )
                 }
                 </div>
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[11]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
                     )
                 }
                 </div>

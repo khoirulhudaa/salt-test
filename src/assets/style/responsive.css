@@ -89,6 +89,31 @@
         color: black;
         align-items: center;
         margin-left: 14px;
+    }
+
+    .modal-body {
+      display: flex;
+    }
+
+      .modal .btn-nav {
+        position: relative;
+        border: none;
+        height: 44px;
+        width: 140px;
+        margin-right: 4px;
+        overflow: none;
+        border-radius: 3000px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .modal .profile {
+        position: relative;
+        display: flex;
+        color: black;
+        margin-left: 10px;
+        align-items: center;
+        margin-left: 14px;
       }
     
       .profile p {
@@ -160,9 +185,47 @@
       .menu ul li {
         list-style: none;
         cursor: pointer;
+        display: flex;
+        align-items: center;
         margin: 0px 13px 0 0;
         width: max-content;
         transition: 0.4s;
+      }
+
+      .li-modal {
+        display: block;
+        flex-direction: column;
+        width: 40px;
+        height: max-content;
+        padding: 6px;
+        cursor: pointer;
+      }
+
+      .li-modal .li-modal-div {
+        width: 30px;
+        height: 2px;
+        position: relative;
+        top: 2.5px;
+        background-color: rgb(190, 190, 190);
+        margin-bottom: 6px;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+
+      .li-modal:active .li-modal-div:nth-child(1) {
+        transition: 0.1s;
+        background-color: black;
+      }
+      
+      .li-modal:active .li-modal-div:nth-child(2) {
+        width: 10px;
+        transition: 0.1s;
+        background-color: black;
+      }
+
+      .li-modal:active .li-modal-div:nth-child(3) {
+        transition: 0.1s;
+        background-color: black;
       }
       
       .menu ul li:hover {
@@ -613,10 +676,10 @@
 
 @media screen and (max-width: 1280px) {
   .nav-center h1 {
-    position: absolute;
-    font-size:16px;
+    font-size: 18px;
     font-weight: bold;
     margin-left: 8px;
+    margin-right: 0px;
     margin-top: 8px;
   }
 }

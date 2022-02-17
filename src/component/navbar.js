@@ -2,6 +2,7 @@ import React from 'react';
 import { faUpload, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/style/responsive.css';
 
 export default function Navbar({setData, search, setSearch, ok}) {
   return (

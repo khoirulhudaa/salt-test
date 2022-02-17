@@ -28,22 +28,16 @@ export default function Content2({news}) {
               <div className="videos-top-right">
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[6]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
-                    )
+                    ) 
                 }
                 </div>
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[7]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
-                    )
+                    ) 
                 }
                 </div>
               </div>
@@ -53,22 +47,16 @@ export default function Content2({news}) {
             <div className="videos-bottom">
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[8]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
-                    )
+                    ) 
                 }
                 </div>
                 <div className="child-videos">
                 {
-                    news.length ? (
+                    news.length && (
                       <img src={news[9]?.largeImageURL} alt="image" />
-                    ) : (
-                      // DUmmy Image
-                      <img src={dummy} alt="image" />
-                    )
+                    ) 
                 }
                 </div>
                 <div className="child-upload-videos">
@@ -78,7 +66,7 @@ export default function Content2({news}) {
             </div>
           </div>
         </div>
-        <div className="content-right">
+        <div className="content-right" id='channels'>
           <div className="title-content-right">
             <h2>Channels</h2>
             <small>Browse all channels</small>
