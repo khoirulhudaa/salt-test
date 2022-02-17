@@ -159,6 +159,7 @@
         overflow-x: scroll;
         display: flex;
         height: 60px;
+        overflow-y: hidden;
         margin-top: 20px;
         margin-bottom: 26px;
         box-sizing: border-box;
